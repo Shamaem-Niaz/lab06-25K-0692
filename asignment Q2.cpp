@@ -3,7 +3,7 @@ int main(){
 	int n1,n2,sum;
 	int opr;
 	int count = 0;
-	int div = n1;
+	int div;
 	
 	
 	printf("enter n1: ");
@@ -20,6 +20,10 @@ int main(){
 		printf("ans= %d\n" ,sum );
 	
 	}else if (opr == 2){
+		if (n2 == 0){
+			printf("infinity");
+		}
+		div = n1;
 		while (div>0){
 			div = div-n2;
 			count = count +1;
@@ -28,3 +32,4 @@ int main(){
 	}
 	return 0;
 }
+
